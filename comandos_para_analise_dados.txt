@@ -1,0 +1,17 @@
+import pandas as pd 
+ccf = pd.read_csv('credit_card_fraud.csv') 
+ccf.head(100)
+ccf.info()
+ccf.describe()
+media = ccf['amt'].mean()  # Média
+mediana = ccf['amt'].median()  # Mediana
+moda = ccf['amt'].mode()[0]  # Moda
+import pandas as pd 
+ccf = pd.read_csv('credit_card_fraud.csv') 
+media = ccf['amt'].mean()
+desvio = ccf['amt'].std()  # Desvio padrão
+variancia = ccf['amt'].var()  # Variância
+
+print(media)
+print(desvio)
+print(variancia)
